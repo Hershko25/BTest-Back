@@ -1,0 +1,226 @@
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTest-Server.dll.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTest-Server.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTest-Server.pdb
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csc.exe
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csc.exe.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csc.rsp
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csi.exe
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csi.exe.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\csi.rsp
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.AppContext.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Console.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.IO.Compression.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Net.Http.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Net.Sockets.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.ValueTuple.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Xml.XPath.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\vbc.exe
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\vbc.exe.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\vbc.rsp
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\VBCSCompiler.exe
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Antlr3.Runtime.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTestLibrary.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\EntityFramework.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\EntityFramework.SqlServer.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Newtonsoft.Json.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Net.Http.Formatting.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Helpers.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Http.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Http.WebHost.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Mvc.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Optimization.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Razor.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.Deployment.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.Razor.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\WebGrease.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTestLibrary.pdb
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\BTestLibrary.dll.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\EntityFramework.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\EntityFramework.SqlServer.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Newtonsoft.Json.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Net.Http.Formatting.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Helpers.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Http.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Http.WebHost.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Mvc.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Optimization.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.Razor.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.Deployment.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\System.Web.WebPages.Razor.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Antlr3.Runtime.pdb
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\obj\Release\BTest-Server.csproj.AssemblyReference.cache
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\obj\Release\BTest-Server.csproj.CoreCompileInputs.cache
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\obj\Release\BTest-Server.csproj.CopyComplete
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\obj\Release\BTest-Server.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTest-Server\obj\Release\BTest-Server.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\NLog.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTest-Server.dll.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTest-Server.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTest-Server.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csc.exe
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csc.exe.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csc.rsp
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csi.exe
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csi.exe.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\csi.rsp
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.AppContext.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Console.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.IO.Compression.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Net.Http.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Net.Sockets.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.ValueTuple.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Xml.XPath.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\vbc.exe
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\vbc.exe.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\vbc.rsp
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\VBCSCompiler.exe
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Antlr3.Runtime.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTestLibrary.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\ConvertApi.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\EntityFramework.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\EntityFramework.SqlServer.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\MathNet.Numerics.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Options.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Newtonsoft.Json.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\NLog.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Buffers.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.ComponentModel.Annotations.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Memory.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Net.Http.Formatting.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Numerics.Vectors.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Text.Encodings.Web.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.ValueTuple.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Cors.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Helpers.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.Cors.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.WebHost.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Mvc.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Optimization.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Razor.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.Razor.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\WebGrease.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTestLibrary.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\BTestLibrary.dll.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\EntityFramework.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\EntityFramework.SqlServer.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\MathNet.Numerics.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Options.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\NLog.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Buffers.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Memory.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Numerics.Vectors.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Text.Encodings.Web.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.ValueTuple.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.Cors.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Newtonsoft.Json.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Net.Http.Formatting.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Helpers.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Http.WebHost.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Mvc.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Optimization.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.Razor.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\System.Web.WebPages.Razor.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Antlr3.Runtime.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\obj\Release\BTest-Server.csproj.AssemblyReference.cache
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\obj\Release\BTest-Server.csproj.CoreCompileInputs.cache
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\obj\Release\BTest-Server.csproj.CopyComplete
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\obj\Release\BTest-Server.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTest-Server\obj\Release\BTest-Server.pdb

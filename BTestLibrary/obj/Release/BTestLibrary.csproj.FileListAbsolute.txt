@@ -1,0 +1,27 @@
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\BTestLibrary.dll.config
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\BTestLibrary.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\BTestLibrary.pdb
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\EntityFramework.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\EntityFramework.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\obj\Release\BTestLibrary.csproj.AssemblyReference.cache
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\obj\Release\BTestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\obj\Release\BTestLibrary.csproj.CopyComplete
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\obj\Release\BTestLibrary.dll
+C:\Users\97254\Desktop\לימודים\שנה ג\פיתוח אפליקציות\FinalProject\BTestLibrary\obj\Release\BTestLibrary.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\BTestLibrary.dll.config
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\BTestLibrary.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\BTestLibrary.pdb
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\ConvertApi.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\EntityFramework.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\Newtonsoft.Json.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\EntityFramework.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\bin\Release\Newtonsoft.Json.xml
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\obj\Release\BTestLibrary.csproj.AssemblyReference.cache
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\obj\Release\BTestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\obj\Release\BTestLibrary.csproj.CopyComplete
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\obj\Release\BTestLibrary.dll
+C:\Users\hersh\Desktop\BTest\ProjectBTest\ÖÿÜ Éàïçë\BTestLibrary\obj\Release\BTestLibrary.pdb

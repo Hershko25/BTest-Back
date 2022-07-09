@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bgroup87_prodModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BTestDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AllCorrelations" EntityType="bgroup87_prodModel.AllCorrelation" />
+    <EntitySet Name="Foods" EntityType="bgroup87_prodModel.Food" />
+    <EntitySet Name="Food_Index" EntityType="bgroup87_prodModel.Food_Index" />
+    <EntitySet Name="General_recommendations" EntityType="bgroup87_prodModel.General_recommendation" />
+    <EntitySet Name="Health_Questionnaires" EntityType="bgroup87_prodModel.Health_Questionnaire" />
+    <EntitySet Name="Indices" EntityType="bgroup87_prodModel.Index" />
+    <EntitySet Name="Index_Number_Recommendation_Id" EntityType="bgroup87_prodModel.Index_Number_Recommendation_Id" />
+    <EntitySet Name="Recommendations" EntityType="bgroup87_prodModel.Recommendation" />
+    <EntitySet Name="Registered_Users" EntityType="bgroup87_prodModel.Registered_User" />
+    <EntitySet Name="Report_Index" EntityType="bgroup87_prodModel.Report_Index" />
+    <EntitySet Name="sysdiagrams" EntityType="bgroup87_prodModel.sysdiagram" />
+    <EntitySet Name="User_Reports" EntityType="bgroup87_prodModel.User_Report" />
+    <AssociationSet Name="FK_Food_Index_Food1" Association="bgroup87_prodModel.FK_Food_Index_Food1">
+      <End Role="Food" EntitySet="Foods" />
+      <End Role="Food_Index" EntitySet="Food_Index" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Food_Index_Index1" Association="bgroup87_prodModel.FK_Food_Index_Index1">
+      <End Role="Index" EntitySet="Indices" />
+      <End Role="Food_Index" EntitySet="Food_Index" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Health_Questionnaire_Registered_User1" Association="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1">
+      <End Role="Registered_User" EntitySet="Registered_Users" />
+      <End Role="Health_Questionnaire" EntitySet="Health_Questionnaires" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Index_Number_Recommendation_Id_Index1" Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1">
+      <End Role="Index" EntitySet="Indices" />
+      <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_Index_Index" Association="bgroup87_prodModel.FK_Report_Index_Index">
+      <End Role="Index" EntitySet="Indices" />
+      <End Role="Report_Index" EntitySet="Report_Index" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Index_Number_Recommendation_Id_Recommendation1" Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1">
+      <End Role="Recommendation" EntitySet="Recommendations" />
+      <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Report_Registered_User" Association="bgroup87_prodModel.FK_User_Report_Registered_User">
+      <End Role="Registered_User" EntitySet="Registered_Users" />
+      <End Role="User_Report" EntitySet="User_Reports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_Index_User_Report" Association="bgroup87_prodModel.FK_Report_Index_User_Report">
+      <End Role="User_Report" EntitySet="User_Reports" />
+      <End Role="Report_Index" EntitySet="Report_Index" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AllCorrelation">
+    <Key>
+      <PropertyRef Name="Index_Number" />
+      <PropertyRef Name="Q_number" />
+    </Key>
+    <Property Name="Index_Number" Type="Int32" Nullable="false" />
+    <Property Name="Q_number" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="correlation" Type="Double" />
+  </EntityType>
+  <EntityType Name="Food">
+    <Key>
+      <PropertyRef Name="Food_Id" />
+    </Key>
+    <Property Name="Food_Id" Type="Int32" Nullable="false" />
+    <Property Name="Food_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cal_100g" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Carb" Type="Double" Nullable="false" />
+    <Property Name="Protein" Type="Double" Nullable="false" />
+    <Property Name="Fat" Type="Double" Nullable="false" />
+    <Property Name="Meat" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Food_Index" Relationship="bgroup87_prodModel.FK_Food_Index_Food1" FromRole="Food" ToRole="Food_Index" />
+  </EntityType>
+  <EntityType Name="Food_Index">
+    <Key>
+      <PropertyRef Name="Food_Id" />
+      <PropertyRef Name="Index_Id" />
+    </Key>
+    <Property Name="Food_Id" Type="Int32" Nullable="false" />
+    <Property Name="Index_Id" Type="Int32" Nullable="false" />
+    <Property Name="Index_Type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Food" Relationship="bgroup87_prodModel.FK_Food_Index_Food1" FromRole="Food_Index" ToRole="Food" />
+    <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Food_Index_Index1" FromRole="Food_Index" ToRole="Index" />
+  </EntityType>
+  <EntityType Name="General_recommendation">
+    <Key>
+      <PropertyRef Name="General_recommendation_id" />
+    </Key>
+    <Property Name="General_recommendation_id" Type="Int32" Nullable="false" />
+    <Property Name="Recommendation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Health_Questionnaire">
+    <Key>
+      <PropertyRef Name="Health_Questionnaire_Id" />
+    </Key>
+    <Property Name="Health_Questionnaire_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="Int32" Nullable="false" />
+    <Property Name="q1" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q2" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q3" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q4" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q5" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="q6" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q7" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q8" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q9" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q10" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q11" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q12" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q13" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="q14" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Height" Type="Double" Nullable="false" />
+    <Property Name="Weight" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Registered_User" Relationship="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1" FromRole="Health_Questionnaire" ToRole="Registered_User" />
+  </EntityType>
+  <EntityType Name="Index">
+    <Key>
+      <PropertyRef Name="Index_Number" />
+    </Key>
+    <Property Name="Index_Number" Type="Int32" Nullable="false" />
+    <Property Name="Symbol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Index_Name_En" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Index_Name_He" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="The_purpose_of_the_test" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Index_Explanation_above_norm" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Index_Explanation_below_norm" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Index_Min_Number" Type="Double" />
+    <Property Name="Index_Max_Number" Type="Double" />
+    <Property Name="Index_Min_Number_F" Type="Double" />
+    <Property Name="Index_Max_Number_F" Type="Double" />
+    <NavigationProperty Name="Food_Index" Relationship="bgroup87_prodModel.FK_Food_Index_Index1" FromRole="Index" ToRole="Food_Index" />
+    <NavigationProperty Name="Index_Number_Recommendation_Id" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1" FromRole="Index" ToRole="Index_Number_Recommendation_Id" />
+    <NavigationProperty Name="Report_Index" Relationship="bgroup87_prodModel.FK_Report_Index_Index" FromRole="Index" ToRole="Report_Index" />
+  </EntityType>
+  <EntityType Name="Index_Number_Recommendation_Id">
+    <Key>
+      <PropertyRef Name="Recommendation_Id" />
+      <PropertyRef Name="Index_Number" />
+    </Key>
+    <Property Name="Recommendation_Id" Type="Int32" Nullable="false" />
+    <Property Name="Index_Number" Type="Int32" Nullable="false" />
+    <Property Name="AboveBelow" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1" FromRole="Index_Number_Recommendation_Id" ToRole="Index" />
+    <NavigationProperty Name="Recommendation" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1" FromRole="Index_Number_Recommendation_Id" ToRole="Recommendation" />
+  </EntityType>
+  <EntityType Name="Recommendation">
+    <Key>
+      <PropertyRef Name="Recommendation_Id" />
+    </Key>
+    <Property Name="Recommendation_Id" Type="Int32" Nullable="false" />
+    <Property Name="Recommendation1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Index_Number_Recommendation_Id" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1" FromRole="Recommendation" ToRole="Index_Number_Recommendation_Id" />
+  </EntityType>
+  <EntityType Name="Registered_User">
+    <Key>
+      <PropertyRef Name="User_Id" />
+    </Key>
+    <Property Name="User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Health_Questionnaire" Relationship="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1" FromRole="Registered_User" ToRole="Health_Questionnaire" />
+    <NavigationProperty Name="User_Report" Relationship="bgroup87_prodModel.FK_User_Report_Registered_User" FromRole="Registered_User" ToRole="User_Report" />
+  </EntityType>
+  <EntityType Name="Report_Index">
+    <Key>
+      <PropertyRef Name="Report_Id" />
+      <PropertyRef Name="Index_Number" />
+    </Key>
+    <Property Name="Report_Id" Type="Int32" Nullable="false" />
+    <Property Name="Index_Number" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Report_Index_Index" FromRole="Report_Index" ToRole="Index" />
+    <NavigationProperty Name="User_Report" Relationship="bgroup87_prodModel.FK_Report_Index_User_Report" FromRole="Report_Index" ToRole="User_Report" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User_Report">
+    <Key>
+      <PropertyRef Name="Report_Id" />
+    </Key>
+    <Property Name="Report_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Registered_User" Relationship="bgroup87_prodModel.FK_User_Report_Registered_User" FromRole="User_Report" ToRole="Registered_User" />
+    <NavigationProperty Name="Report_Index" Relationship="bgroup87_prodModel.FK_Report_Index_User_Report" FromRole="User_Report" ToRole="Report_Index" />
+  </EntityType>
+  <Association Name="FK_Food_Index_Food1">
+    <End Type="bgroup87_prodModel.Food" Role="Food" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Food_Index" Role="Food_Index" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food">
+        <PropertyRef Name="Food_Id" />
+      </Principal>
+      <Dependent Role="Food_Index">
+        <PropertyRef Name="Food_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Food_Index_Index1">
+    <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Food_Index" Role="Food_Index" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Index">
+        <PropertyRef Name="Index_Number" />
+      </Principal>
+      <Dependent Role="Food_Index">
+        <PropertyRef Name="Index_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Health_Questionnaire_Registered_User1">
+    <End Type="bgroup87_prodModel.Registered_User" Role="Registered_User" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Health_Questionnaire" Role="Health_Questionnaire" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Registered_User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="Health_Questionnaire">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Index_Number_Recommendation_Id_Index1">
+    <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Index_Number_Recommendation_Id" Role="Index_Number_Recommendation_Id" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Index">
+        <PropertyRef Name="Index_Number" />
+      </Principal>
+      <Dependent Role="Index_Number_Recommendation_Id">
+        <PropertyRef Name="Index_Number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_Index_Index">
+    <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Report_Index" Role="Report_Index" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Index">
+        <PropertyRef Name="Index_Number" />
+      </Principal>
+      <Dependent Role="Report_Index">
+        <PropertyRef Name="Index_Number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Index_Number_Recommendation_Id_Recommendation1">
+    <End Type="bgroup87_prodModel.Recommendation" Role="Recommendation" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Index_Number_Recommendation_Id" Role="Index_Number_Recommendation_Id" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Recommendation">
+        <PropertyRef Name="Recommendation_Id" />
+      </Principal>
+      <Dependent Role="Index_Number_Recommendation_Id">
+        <PropertyRef Name="Recommendation_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Report_Registered_User">
+    <End Type="bgroup87_prodModel.Registered_User" Role="Registered_User" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.User_Report" Role="User_Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Registered_User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="User_Report">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_Index_User_Report">
+    <End Type="bgroup87_prodModel.User_Report" Role="User_Report" Multiplicity="1" />
+    <End Type="bgroup87_prodModel.Report_Index" Role="Report_Index" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Report">
+        <PropertyRef Name="Report_Id" />
+      </Principal>
+      <Dependent Role="Report_Index">
+        <PropertyRef Name="Report_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

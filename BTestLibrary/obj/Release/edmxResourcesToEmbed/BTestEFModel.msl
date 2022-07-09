@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bgroup87_prodModelStoreContainer" CdmEntityContainer="BTestDbContext">
+    <EntitySetMapping Name="AllCorrelations">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.AllCorrelation">
+        <MappingFragment StoreEntitySet="AllCorrelation">
+          <ScalarProperty Name="correlation" ColumnName="correlation" />
+          <ScalarProperty Name="Q_number" ColumnName="Q_number" />
+          <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Foods">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Food">
+        <MappingFragment StoreEntitySet="Food">
+          <ScalarProperty Name="Meat" ColumnName="Meat" />
+          <ScalarProperty Name="Fat" ColumnName="Fat" />
+          <ScalarProperty Name="Protein" ColumnName="Protein" />
+          <ScalarProperty Name="Carb" ColumnName="Carb" />
+          <ScalarProperty Name="Cal_100g" ColumnName="Cal_100g" />
+          <ScalarProperty Name="Food_Name" ColumnName="Food_Name" />
+          <ScalarProperty Name="Food_Id" ColumnName="Food_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Food_Index">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Food_Index">
+        <MappingFragment StoreEntitySet="Food_Index">
+          <ScalarProperty Name="Index_Type" ColumnName="Index_Type" />
+          <ScalarProperty Name="Index_Id" ColumnName="Index_Id" />
+          <ScalarProperty Name="Food_Id" ColumnName="Food_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="General_recommendations">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.General_recommendation">
+        <MappingFragment StoreEntitySet="General recommendation">
+          <ScalarProperty Name="Recommendation" ColumnName="Recommendation" />
+          <ScalarProperty Name="General_recommendation_id" ColumnName="General_recommendation_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Health_Questionnaires">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Health_Questionnaire">
+        <MappingFragment StoreEntitySet="Health Questionnaire">
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="q14" ColumnName="q14" />
+          <ScalarProperty Name="q13" ColumnName="q13" />
+          <ScalarProperty Name="q12" ColumnName="q12" />
+          <ScalarProperty Name="q11" ColumnName="q11" />
+          <ScalarProperty Name="q10" ColumnName="q10" />
+          <ScalarProperty Name="q9" ColumnName="q9" />
+          <ScalarProperty Name="q8" ColumnName="q8" />
+          <ScalarProperty Name="q7" ColumnName="q7" />
+          <ScalarProperty Name="q6" ColumnName="q6" />
+          <ScalarProperty Name="q5" ColumnName="q5" />
+          <ScalarProperty Name="q4" ColumnName="q4" />
+          <ScalarProperty Name="q3" ColumnName="q3" />
+          <ScalarProperty Name="q2" ColumnName="q2" />
+          <ScalarProperty Name="q1" ColumnName="q1" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Health_Questionnaire_Id" ColumnName="Health_Questionnaire_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indices">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Index">
+        <MappingFragment StoreEntitySet="Index">
+          <ScalarProperty Name="Index_Max_Number_F" ColumnName="Index_Max_Number_F" />
+          <ScalarProperty Name="Index_Min_Number_F" ColumnName="Index_Min_Number_F" />
+          <ScalarProperty Name="Index_Max_Number" ColumnName="Index_Max_Number" />
+          <ScalarProperty Name="Index_Min_Number" ColumnName="Index_Min_Number" />
+          <ScalarProperty Name="Index_Explanation_below_norm" ColumnName="Index_Explanation_below_norm" />
+          <ScalarProperty Name="Index_Explanation_above_norm" ColumnName="Index_Explanation_above_norm" />
+          <ScalarProperty Name="The_purpose_of_the_test" ColumnName="The_purpose_of_the_test" />
+          <ScalarProperty Name="Index_Name_He" ColumnName="Index_Name_He" />
+          <ScalarProperty Name="Index_Name_En" ColumnName="Index_Name_En" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+          <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Index_Number_Recommendation_Id">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Index_Number_Recommendation_Id">
+        <MappingFragment StoreEntitySet="Index_Number_Recommendation_Id">
+          <ScalarProperty Name="AboveBelow" ColumnName="AboveBelow" />
+          <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+          <ScalarProperty Name="Recommendation_Id" ColumnName="Recommendation_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recommendations">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Recommendation">
+        <MappingFragment StoreEntitySet="Recommendation">
+          <ScalarProperty Name="Recommendation1" ColumnName="Recommendation" />
+          <ScalarProperty Name="Recommendation_Id" ColumnName="Recommendation_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registered_Users">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Registered_User">
+        <MappingFragment StoreEntitySet="Registered User">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report_Index">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.Report_Index">
+        <MappingFragment StoreEntitySet="Report_Index">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+          <ScalarProperty Name="Report_Id" ColumnName="Report_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Reports">
+      <EntityTypeMapping TypeName="bgroup87_prodModel.User_Report">
+        <MappingFragment StoreEntitySet="User Report">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Report_Id" ColumnName="Report_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

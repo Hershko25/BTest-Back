@@ -1,0 +1,2 @@
+2022-06-06 22:42:58.3456 INFO Not regi User Login - Success
+2022-06-06 22:47:07.9196 INFO Not regi User Login - FailSelf referencing loop detected with type 'System.Data.Entity.DynamicProxies.Food_Index_36189DAEE78937B73B5A204ADBF693574FDF8729FA9660E4CB129E60496132AD'. Path 'Indexs[0].Index.Food_Index[0].Food.Food_Index'.

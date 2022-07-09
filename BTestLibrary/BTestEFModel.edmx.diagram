@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1430be34ba0e499f9116a44ed659f77e" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="bgroup87_prodModel.AllCorrelation" Width="1.5" PointX="5.75" PointY="1.375" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Food" Width="1.5" PointX="0.75" PointY="8.25" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Food_Index" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.General_recommendation" Width="1.5" PointX="5.75" PointY="4.375" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Health_Questionnaire" Width="1.5" PointX="3.75" PointY="14.125" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Index" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Index_Number_Recommendation_Id" Width="1.5" PointX="3" PointY="1.5" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Recommendation" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Registered_User" Width="1.5" PointX="1.5" PointY="15.375" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.Report_Index" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.375" />
+        <EntityTypeShape EntityType="bgroup87_prodModel.User_Report" Width="1.5" PointX="0.75" PointY="12.625" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Food_Index_Food1" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Food_Index_Index1" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Report_Index_Index" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_User_Report_Registered_User" />
+        <AssociationConnector Association="bgroup87_prodModel.FK_Report_Index_User_Report" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

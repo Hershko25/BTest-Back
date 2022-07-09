@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="bgroup87_prodModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AllCorrelation">
+          <Key>
+            <PropertyRef Name="Index_Number" />
+            <PropertyRef Name="Q_number" />
+          </Key>
+          <Property Name="Index_Number" Type="int" Nullable="false" />
+          <Property Name="Q_number" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="correlation" Type="float" />
+        </EntityType>
+        <EntityType Name="Food">
+          <Key>
+            <PropertyRef Name="Food_Id" />
+          </Key>
+          <Property Name="Food_Id" Type="int" Nullable="false" />
+          <Property Name="Food_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Cal_100g" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Carb" Type="float" Nullable="false" />
+          <Property Name="Protein" Type="float" Nullable="false" />
+          <Property Name="Fat" Type="float" Nullable="false" />
+          <Property Name="Meat" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Food_Index">
+          <Key>
+            <PropertyRef Name="Food_Id" />
+            <PropertyRef Name="Index_Id" />
+          </Key>
+          <Property Name="Food_Id" Type="int" Nullable="false" />
+          <Property Name="Index_Id" Type="int" Nullable="false" />
+          <Property Name="Index_Type" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="General recommendation">
+          <Key>
+            <PropertyRef Name="General_recommendation_id" />
+          </Key>
+          <Property Name="General_recommendation_id" Type="int" Nullable="false" />
+          <Property Name="Recommendation" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Health Questionnaire">
+          <Key>
+            <PropertyRef Name="Health_Questionnaire_Id" />
+          </Key>
+          <Property Name="Health_Questionnaire_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Id" Type="int" Nullable="false" />
+          <Property Name="q1" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q2" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q3" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q4" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q5" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="q6" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q7" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q8" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q9" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q10" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q11" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q12" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q13" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="q14" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Gender" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Height" Type="float" Nullable="false" />
+          <Property Name="Weight" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Index">
+          <Key>
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Index_Number" Type="int" Nullable="false" />
+          <Property Name="Symbol" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Index_Name_En" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Index_Name_He" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="The_purpose_of_the_test" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Index_Explanation_above_norm" Type="nvarchar(max)" />
+          <Property Name="Index_Explanation_below_norm" Type="nvarchar(max)" />
+          <Property Name="Index_Min_Number" Type="float" />
+          <Property Name="Index_Max_Number" Type="float" />
+          <Property Name="Index_Min_Number_F" Type="float" />
+          <Property Name="Index_Max_Number_F" Type="float" />
+        </EntityType>
+        <EntityType Name="Index_Number_Recommendation_Id">
+          <Key>
+            <PropertyRef Name="Recommendation_Id" />
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Recommendation_Id" Type="int" Nullable="false" />
+          <Property Name="Index_Number" Type="int" Nullable="false" />
+          <Property Name="AboveBelow" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Recommendation">
+          <Key>
+            <PropertyRef Name="Recommendation_Id" />
+          </Key>
+          <Property Name="Recommendation_Id" Type="int" Nullable="false" />
+          <Property Name="Recommendation" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Registered User">
+          <Key>
+            <PropertyRef Name="User_Id" />
+          </Key>
+          <Property Name="User_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Full_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birthday" Type="date" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Report_Index">
+          <Key>
+            <PropertyRef Name="Report_Id" />
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Report_Id" Type="int" Nullable="false" />
+          <Property Name="Index_Number" Type="int" Nullable="false" />
+          <Property Name="Value" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="User Report">
+          <Key>
+            <PropertyRef Name="Report_Id" />
+          </Key>
+          <Property Name="Report_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Food+Index_Food1">
+          <End Role="Food" Type="Self.Food" Multiplicity="1" />
+          <End Role="Food_Index" Type="Self.Food_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Food">
+              <PropertyRef Name="Food_Id" />
+            </Principal>
+            <Dependent Role="Food_Index">
+              <PropertyRef Name="Food_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Food+Index_Index1">
+          <End Role="Index" Type="Self.Index" Multiplicity="1" />
+          <End Role="Food_Index" Type="Self.Food_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Food_Index">
+              <PropertyRef Name="Index_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Health Questionnaire_Registered User1">
+          <End Role="Registered User" Type="Self.Registered User" Multiplicity="1" />
+          <End Role="Health Questionnaire" Type="Self.Health Questionnaire" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registered User">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="Health Questionnaire">
+              <PropertyRef Name="User_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Index_Number+Recommendation_Id_Index1">
+          <End Role="Index" Type="Self.Index" Multiplicity="1" />
+          <End Role="Index_Number_Recommendation_Id" Type="Self.Index_Number_Recommendation_Id" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Index_Number_Recommendation_Id">
+              <PropertyRef Name="Index_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Index_Number+Recommendation_Id_Recommendation1">
+          <End Role="Recommendation" Type="Self.Recommendation" Multiplicity="1" />
+          <End Role="Index_Number_Recommendation_Id" Type="Self.Index_Number_Recommendation_Id" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recommendation">
+              <PropertyRef Name="Recommendation_Id" />
+            </Principal>
+            <Dependent Role="Index_Number_Recommendation_Id">
+              <PropertyRef Name="Recommendation_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report+Index_Index">
+          <End Role="Index" Type="Self.Index" Multiplicity="1" />
+          <End Role="Report_Index" Type="Self.Report_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Report_Index">
+              <PropertyRef Name="Index_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report+Index_User Report">
+          <End Role="User Report" Type="Self.User Report" Multiplicity="1" />
+          <End Role="Report_Index" Type="Self.Report_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User Report">
+              <PropertyRef Name="Report_Id" />
+            </Principal>
+            <Dependent Role="Report_Index">
+              <PropertyRef Name="Report_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User Report_Registered User">
+          <End Role="Registered User" Type="Self.Registered User" Multiplicity="1" />
+          <End Role="User Report" Type="Self.User Report" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registered User">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="User Report">
+              <PropertyRef Name="User_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="bgroup87_prodModelStoreContainer">
+          <EntitySet Name="AllCorrelation" EntityType="Self.AllCorrelation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Food" EntityType="Self.Food" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Food_Index" EntityType="Self.Food_Index" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="General recommendation" EntityType="Self.General recommendation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Health Questionnaire" EntityType="Self.Health Questionnaire" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Index" EntityType="Self.Index" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Index_Number_Recommendation_Id" EntityType="Self.Index_Number_Recommendation_Id" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recommendation" EntityType="Self.Recommendation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Registered User" EntityType="Self.Registered User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Report_Index" EntityType="Self.Report_Index" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User Report" EntityType="Self.User Report" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Food+Index_Food1" Association="Self.FK_Food+Index_Food1">
+            <End Role="Food" EntitySet="Food" />
+            <End Role="Food_Index" EntitySet="Food_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Food+Index_Index1" Association="Self.FK_Food+Index_Index1">
+            <End Role="Index" EntitySet="Index" />
+            <End Role="Food_Index" EntitySet="Food_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Health Questionnaire_Registered User1" Association="Self.FK_Health Questionnaire_Registered User1">
+            <End Role="Registered User" EntitySet="Registered User" />
+            <End Role="Health Questionnaire" EntitySet="Health Questionnaire" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Index_Number+Recommendation_Id_Index1" Association="Self.FK_Index_Number+Recommendation_Id_Index1">
+            <End Role="Index" EntitySet="Index" />
+            <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Index_Number+Recommendation_Id_Recommendation1" Association="Self.FK_Index_Number+Recommendation_Id_Recommendation1">
+            <End Role="Recommendation" EntitySet="Recommendation" />
+            <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report+Index_Index" Association="Self.FK_Report+Index_Index">
+            <End Role="Index" EntitySet="Index" />
+            <End Role="Report_Index" EntitySet="Report_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report+Index_User Report" Association="Self.FK_Report+Index_User Report">
+            <End Role="User Report" EntitySet="User Report" />
+            <End Role="Report_Index" EntitySet="Report_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User Report_Registered User" Association="Self.FK_User Report_Registered User">
+            <End Role="Registered User" EntitySet="Registered User" />
+            <End Role="User Report" EntitySet="User Report" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bgroup87_prodModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BTestDbContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AllCorrelations" EntityType="bgroup87_prodModel.AllCorrelation" />
+          <EntitySet Name="Foods" EntityType="bgroup87_prodModel.Food" />
+          <EntitySet Name="Food_Index" EntityType="bgroup87_prodModel.Food_Index" />
+          <EntitySet Name="General_recommendations" EntityType="bgroup87_prodModel.General_recommendation" />
+          <EntitySet Name="Health_Questionnaires" EntityType="bgroup87_prodModel.Health_Questionnaire" />
+          <EntitySet Name="Indices" EntityType="bgroup87_prodModel.Index" />
+          <EntitySet Name="Index_Number_Recommendation_Id" EntityType="bgroup87_prodModel.Index_Number_Recommendation_Id" />
+          <EntitySet Name="Recommendations" EntityType="bgroup87_prodModel.Recommendation" />
+          <EntitySet Name="Registered_Users" EntityType="bgroup87_prodModel.Registered_User" />
+          <EntitySet Name="Report_Index" EntityType="bgroup87_prodModel.Report_Index" />
+          <EntitySet Name="sysdiagrams" EntityType="bgroup87_prodModel.sysdiagram" />
+          <EntitySet Name="User_Reports" EntityType="bgroup87_prodModel.User_Report" />
+          <AssociationSet Name="FK_Food_Index_Food1" Association="bgroup87_prodModel.FK_Food_Index_Food1">
+            <End Role="Food" EntitySet="Foods" />
+            <End Role="Food_Index" EntitySet="Food_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Food_Index_Index1" Association="bgroup87_prodModel.FK_Food_Index_Index1">
+            <End Role="Index" EntitySet="Indices" />
+            <End Role="Food_Index" EntitySet="Food_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Health_Questionnaire_Registered_User1" Association="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1">
+            <End Role="Registered_User" EntitySet="Registered_Users" />
+            <End Role="Health_Questionnaire" EntitySet="Health_Questionnaires" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Index_Number_Recommendation_Id_Index1" Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1">
+            <End Role="Index" EntitySet="Indices" />
+            <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report_Index_Index" Association="bgroup87_prodModel.FK_Report_Index_Index">
+            <End Role="Index" EntitySet="Indices" />
+            <End Role="Report_Index" EntitySet="Report_Index" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Index_Number_Recommendation_Id_Recommendation1" Association="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1">
+            <End Role="Recommendation" EntitySet="Recommendations" />
+            <End Role="Index_Number_Recommendation_Id" EntitySet="Index_Number_Recommendation_Id" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Report_Registered_User" Association="bgroup87_prodModel.FK_User_Report_Registered_User">
+            <End Role="Registered_User" EntitySet="Registered_Users" />
+            <End Role="User_Report" EntitySet="User_Reports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Report_Index_User_Report" Association="bgroup87_prodModel.FK_Report_Index_User_Report">
+            <End Role="User_Report" EntitySet="User_Reports" />
+            <End Role="Report_Index" EntitySet="Report_Index" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AllCorrelation">
+          <Key>
+            <PropertyRef Name="Index_Number" />
+            <PropertyRef Name="Q_number" />
+          </Key>
+          <Property Name="Index_Number" Type="Int32" Nullable="false" />
+          <Property Name="Q_number" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="correlation" Type="Double" />
+        </EntityType>
+        <EntityType Name="Food">
+          <Key>
+            <PropertyRef Name="Food_Id" />
+          </Key>
+          <Property Name="Food_Id" Type="Int32" Nullable="false" />
+          <Property Name="Food_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cal_100g" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Carb" Type="Double" Nullable="false" />
+          <Property Name="Protein" Type="Double" Nullable="false" />
+          <Property Name="Fat" Type="Double" Nullable="false" />
+          <Property Name="Meat" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Food_Index" Relationship="bgroup87_prodModel.FK_Food_Index_Food1" FromRole="Food" ToRole="Food_Index" />
+        </EntityType>
+        <EntityType Name="Food_Index">
+          <Key>
+            <PropertyRef Name="Food_Id" />
+            <PropertyRef Name="Index_Id" />
+          </Key>
+          <Property Name="Food_Id" Type="Int32" Nullable="false" />
+          <Property Name="Index_Id" Type="Int32" Nullable="false" />
+          <Property Name="Index_Type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Food" Relationship="bgroup87_prodModel.FK_Food_Index_Food1" FromRole="Food_Index" ToRole="Food" />
+          <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Food_Index_Index1" FromRole="Food_Index" ToRole="Index" />
+        </EntityType>
+        <EntityType Name="General_recommendation">
+          <Key>
+            <PropertyRef Name="General_recommendation_id" />
+          </Key>
+          <Property Name="General_recommendation_id" Type="Int32" Nullable="false" />
+          <Property Name="Recommendation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Health_Questionnaire">
+          <Key>
+            <PropertyRef Name="Health_Questionnaire_Id" />
+          </Key>
+          <Property Name="Health_Questionnaire_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Id" Type="Int32" Nullable="false" />
+          <Property Name="q1" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q2" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q3" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q4" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q5" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="q6" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q7" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q8" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q9" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q10" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q11" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q12" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q13" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="q14" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Height" Type="Double" Nullable="false" />
+          <Property Name="Weight" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Registered_User" Relationship="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1" FromRole="Health_Questionnaire" ToRole="Registered_User" />
+        </EntityType>
+        <EntityType Name="Index">
+          <Key>
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Index_Number" Type="Int32" Nullable="false" />
+          <Property Name="Symbol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Index_Name_En" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Index_Name_He" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="The_purpose_of_the_test" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Index_Explanation_above_norm" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Index_Explanation_below_norm" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Index_Min_Number" Type="Double" />
+          <Property Name="Index_Max_Number" Type="Double" />
+          <Property Name="Index_Min_Number_F" Type="Double" />
+          <Property Name="Index_Max_Number_F" Type="Double" />
+          <NavigationProperty Name="Food_Index" Relationship="bgroup87_prodModel.FK_Food_Index_Index1" FromRole="Index" ToRole="Food_Index" />
+          <NavigationProperty Name="Index_Number_Recommendation_Id" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1" FromRole="Index" ToRole="Index_Number_Recommendation_Id" />
+          <NavigationProperty Name="Report_Index" Relationship="bgroup87_prodModel.FK_Report_Index_Index" FromRole="Index" ToRole="Report_Index" />
+        </EntityType>
+        <EntityType Name="Index_Number_Recommendation_Id">
+          <Key>
+            <PropertyRef Name="Recommendation_Id" />
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Recommendation_Id" Type="Int32" Nullable="false" />
+          <Property Name="Index_Number" Type="Int32" Nullable="false" />
+          <Property Name="AboveBelow" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Index1" FromRole="Index_Number_Recommendation_Id" ToRole="Index" />
+          <NavigationProperty Name="Recommendation" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1" FromRole="Index_Number_Recommendation_Id" ToRole="Recommendation" />
+        </EntityType>
+        <EntityType Name="Recommendation">
+          <Key>
+            <PropertyRef Name="Recommendation_Id" />
+          </Key>
+          <Property Name="Recommendation_Id" Type="Int32" Nullable="false" />
+          <Property Name="Recommendation1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Index_Number_Recommendation_Id" Relationship="bgroup87_prodModel.FK_Index_Number_Recommendation_Id_Recommendation1" FromRole="Recommendation" ToRole="Index_Number_Recommendation_Id" />
+        </EntityType>
+        <EntityType Name="Registered_User">
+          <Key>
+            <PropertyRef Name="User_Id" />
+          </Key>
+          <Property Name="User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="DateTime" Precision="0" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Health_Questionnaire" Relationship="bgroup87_prodModel.FK_Health_Questionnaire_Registered_User1" FromRole="Registered_User" ToRole="Health_Questionnaire" />
+          <NavigationProperty Name="User_Report" Relationship="bgroup87_prodModel.FK_User_Report_Registered_User" FromRole="Registered_User" ToRole="User_Report" />
+        </EntityType>
+        <EntityType Name="Report_Index">
+          <Key>
+            <PropertyRef Name="Report_Id" />
+            <PropertyRef Name="Index_Number" />
+          </Key>
+          <Property Name="Report_Id" Type="Int32" Nullable="false" />
+          <Property Name="Index_Number" Type="Int32" Nullable="false" />
+          <Property Name="Value" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Index" Relationship="bgroup87_prodModel.FK_Report_Index_Index" FromRole="Report_Index" ToRole="Index" />
+          <NavigationProperty Name="User_Report" Relationship="bgroup87_prodModel.FK_Report_Index_User_Report" FromRole="Report_Index" ToRole="User_Report" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="User_Report">
+          <Key>
+            <PropertyRef Name="Report_Id" />
+          </Key>
+          <Property Name="Report_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Registered_User" Relationship="bgroup87_prodModel.FK_User_Report_Registered_User" FromRole="User_Report" ToRole="Registered_User" />
+          <NavigationProperty Name="Report_Index" Relationship="bgroup87_prodModel.FK_Report_Index_User_Report" FromRole="User_Report" ToRole="Report_Index" />
+        </EntityType>
+        <Association Name="FK_Food_Index_Food1">
+          <End Type="bgroup87_prodModel.Food" Role="Food" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Food_Index" Role="Food_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Food">
+              <PropertyRef Name="Food_Id" />
+            </Principal>
+            <Dependent Role="Food_Index">
+              <PropertyRef Name="Food_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Food_Index_Index1">
+          <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Food_Index" Role="Food_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Food_Index">
+              <PropertyRef Name="Index_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Health_Questionnaire_Registered_User1">
+          <End Type="bgroup87_prodModel.Registered_User" Role="Registered_User" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Health_Questionnaire" Role="Health_Questionnaire" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registered_User">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="Health_Questionnaire">
+              <PropertyRef Name="User_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Index_Number_Recommendation_Id_Index1">
+          <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Index_Number_Recommendation_Id" Role="Index_Number_Recommendation_Id" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Index_Number_Recommendation_Id">
+              <PropertyRef Name="Index_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report_Index_Index">
+          <End Type="bgroup87_prodModel.Index" Role="Index" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Report_Index" Role="Report_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Index">
+              <PropertyRef Name="Index_Number" />
+            </Principal>
+            <Dependent Role="Report_Index">
+              <PropertyRef Name="Index_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Index_Number_Recommendation_Id_Recommendation1">
+          <End Type="bgroup87_prodModel.Recommendation" Role="Recommendation" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Index_Number_Recommendation_Id" Role="Index_Number_Recommendation_Id" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recommendation">
+              <PropertyRef Name="Recommendation_Id" />
+            </Principal>
+            <Dependent Role="Index_Number_Recommendation_Id">
+              <PropertyRef Name="Recommendation_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Report_Registered_User">
+          <End Type="bgroup87_prodModel.Registered_User" Role="Registered_User" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.User_Report" Role="User_Report" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registered_User">
+              <PropertyRef Name="User_Id" />
+            </Principal>
+            <Dependent Role="User_Report">
+              <PropertyRef Name="User_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Report_Index_User_Report">
+          <End Type="bgroup87_prodModel.User_Report" Role="User_Report" Multiplicity="1" />
+          <End Type="bgroup87_prodModel.Report_Index" Role="Report_Index" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Report">
+              <PropertyRef Name="Report_Id" />
+            </Principal>
+            <Dependent Role="Report_Index">
+              <PropertyRef Name="Report_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bgroup87_prodModelStoreContainer" CdmEntityContainer="BTestDbContext">
+          <EntitySetMapping Name="AllCorrelations">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.AllCorrelation">
+              <MappingFragment StoreEntitySet="AllCorrelation">
+                <ScalarProperty Name="correlation" ColumnName="correlation" />
+                <ScalarProperty Name="Q_number" ColumnName="Q_number" />
+                <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Foods">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Food">
+              <MappingFragment StoreEntitySet="Food">
+                <ScalarProperty Name="Meat" ColumnName="Meat" />
+                <ScalarProperty Name="Fat" ColumnName="Fat" />
+                <ScalarProperty Name="Protein" ColumnName="Protein" />
+                <ScalarProperty Name="Carb" ColumnName="Carb" />
+                <ScalarProperty Name="Cal_100g" ColumnName="Cal_100g" />
+                <ScalarProperty Name="Food_Name" ColumnName="Food_Name" />
+                <ScalarProperty Name="Food_Id" ColumnName="Food_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Food_Index">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Food_Index">
+              <MappingFragment StoreEntitySet="Food_Index">
+                <ScalarProperty Name="Index_Type" ColumnName="Index_Type" />
+                <ScalarProperty Name="Index_Id" ColumnName="Index_Id" />
+                <ScalarProperty Name="Food_Id" ColumnName="Food_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="General_recommendations">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.General_recommendation">
+              <MappingFragment StoreEntitySet="General recommendation">
+                <ScalarProperty Name="Recommendation" ColumnName="Recommendation" />
+                <ScalarProperty Name="General_recommendation_id" ColumnName="General_recommendation_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Health_Questionnaires">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Health_Questionnaire">
+              <MappingFragment StoreEntitySet="Health Questionnaire">
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="q14" ColumnName="q14" />
+                <ScalarProperty Name="q13" ColumnName="q13" />
+                <ScalarProperty Name="q12" ColumnName="q12" />
+                <ScalarProperty Name="q11" ColumnName="q11" />
+                <ScalarProperty Name="q10" ColumnName="q10" />
+                <ScalarProperty Name="q9" ColumnName="q9" />
+                <ScalarProperty Name="q8" ColumnName="q8" />
+                <ScalarProperty Name="q7" ColumnName="q7" />
+                <ScalarProperty Name="q6" ColumnName="q6" />
+                <ScalarProperty Name="q5" ColumnName="q5" />
+                <ScalarProperty Name="q4" ColumnName="q4" />
+                <ScalarProperty Name="q3" ColumnName="q3" />
+                <ScalarProperty Name="q2" ColumnName="q2" />
+                <ScalarProperty Name="q1" ColumnName="q1" />
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+                <ScalarProperty Name="Health_Questionnaire_Id" ColumnName="Health_Questionnaire_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Indices">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Index">
+              <MappingFragment StoreEntitySet="Index">
+                <ScalarProperty Name="Index_Max_Number_F" ColumnName="Index_Max_Number_F" />
+                <ScalarProperty Name="Index_Min_Number_F" ColumnName="Index_Min_Number_F" />
+                <ScalarProperty Name="Index_Max_Number" ColumnName="Index_Max_Number" />
+                <ScalarProperty Name="Index_Min_Number" ColumnName="Index_Min_Number" />
+                <ScalarProperty Name="Index_Explanation_below_norm" ColumnName="Index_Explanation_below_norm" />
+                <ScalarProperty Name="Index_Explanation_above_norm" ColumnName="Index_Explanation_above_norm" />
+                <ScalarProperty Name="The_purpose_of_the_test" ColumnName="The_purpose_of_the_test" />
+                <ScalarProperty Name="Index_Name_He" ColumnName="Index_Name_He" />
+                <ScalarProperty Name="Index_Name_En" ColumnName="Index_Name_En" />
+                <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+                <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Index_Number_Recommendation_Id">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Index_Number_Recommendation_Id">
+              <MappingFragment StoreEntitySet="Index_Number_Recommendation_Id">
+                <ScalarProperty Name="AboveBelow" ColumnName="AboveBelow" />
+                <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+                <ScalarProperty Name="Recommendation_Id" ColumnName="Recommendation_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recommendations">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Recommendation">
+              <MappingFragment StoreEntitySet="Recommendation">
+                <ScalarProperty Name="Recommendation1" ColumnName="Recommendation" />
+                <ScalarProperty Name="Recommendation_Id" ColumnName="Recommendation_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Registered_Users">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Registered_User">
+              <MappingFragment StoreEntitySet="Registered User">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Report_Index">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.Report_Index">
+              <MappingFragment StoreEntitySet="Report_Index">
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Index_Number" ColumnName="Index_Number" />
+                <ScalarProperty Name="Report_Id" ColumnName="Report_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Reports">
+            <EntityTypeMapping TypeName="bgroup87_prodModel.User_Report">
+              <MappingFragment StoreEntitySet="User Report">
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+                <ScalarProperty Name="Report_Id" ColumnName="Report_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
